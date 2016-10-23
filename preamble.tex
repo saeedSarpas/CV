@@ -1,0 +1,35 @@
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[a4paper, left=1cm, right=1.5cm, bottom=2.5cm, top=0cm]{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{pifont}
+
+% Title
+\newcommand{\name}{ Saeed Sarpas}
+\newcommand{\addr}{ Room 3.013, Argelander-Institut f\"{u}r Astronomie }
+\newcommand{\secondlineaddr}{ Auf dem H\"{u}gel 71, D-53121 Bonn }
+\newcommand{\email}{ saeed@astro.uni-bonn.de }
+
+% Separators
+\newcommand{\sep}{\newline\vspace{0.5mm}}
+
+% New part symbol
+\newcommand{\newpart}{{\small \ding{108} }}
+
+% Part title
+\newcommand{\parttitle}[1]{\multicolumn{2}{l}{\vspace{5mm}\hspace{1cm}{\large\textbf{\newpart #1}}}}
+
+% Array package
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Font
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Ubuntu}
+\setmonofont{Ubuntu}
