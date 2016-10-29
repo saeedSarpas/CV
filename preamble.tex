@@ -1,25 +1,38 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[a4paper, left=1cm, right=1.5cm, bottom=2.5cm, top=0cm]{geometry}
+\usepackage[a4paper, left=1cm, right=1.5cm, bottom=1.5cm, top=2cm]{geometry}
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{pifont}
 
 % Title
-\newcommand{\name}{ Saeed Sarpas}
-\newcommand{\addr}{ Room 3.013, Argelander-Institut f\"{u}r Astronomie }
-\newcommand{\secondlineaddr}{ Auf dem H\"{u}gel 71, D-53121 Bonn }
-\newcommand{\email}{ saeed@astro.uni-bonn.de }
+\usepackage{titling}
+\pretitle{\begin{flushleft}}
+\posttitle{\end{flushleft}}
+\preauthor{\begin{flushleft}}
+\postauthor{\end{flushleft}}
+\newcommand{\name}{Saeed Sarpas}
+\newcommand{\officeaddr}{Room 3.013, Argelander-Institut f\"{u}r Astronomie}
+\newcommand{\officepostalcode}{Auf dem H\"{u}gel 71, D-53121 Bonn}
+\newcommand{\officetel}{+49-(0)228-73 9398}
+\newcommand{\officeemail}{saeed@astro.uni-bonn.de}
+\newcommand{\homeaddr}{Babette-koch-weg 1 - Zi. 55442}
+\newcommand{\homepostalcode}{D-53121 Bonn}
+\newcommand{\hometel}{+49-(0)176-808 22642}
+\newcommand{\homeemail}{s.sarpas@gmail.com}
 
 % Separators
-\newcommand{\sep}{\newline\vspace{0.5mm}}
+\newcommand{\sep}{\vspace{-1mm}}
 
 % New part symbol
 \newcommand{\newpart}{{\small \ding{108} }}
 
 % Part title
-\newcommand{\parttitle}[1]{\multicolumn{2}{l}{\vspace{5mm}\hspace{1cm}{\large\textbf{\newpart #1}}}}
+\newcommand{\parttitle}[1]{\multicolumn{2}{l}{\vspace{3mm}\hspace{5mm}{\large\textbf{\newpart #1}}}\vspace{-4mm}\\\multicolumn{2}{l}{\vspace{2mm}\textcolor{light-gray}{\rule{\textwidth}{0.1mm}}}}
+
+% Descriptions
+\newcommand{\desc}[1]{\par\textcolor{dark-gray}{{\small #1}}}
 
 % Array package
 \usepackage{array}
@@ -27,9 +40,19 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+% Fixing the texttc problem in serif fonts
+\usepackage[T1]{fontenc}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.6}
+\definecolor{gray}{gray}{0.25}
+\definecolor{dark-gray}{gray}{0.1}
+\newcommand{\sgray}[1]{\textcolor{gray}{{\small #1}}}
+
 % Font
-% \renewcommand{\familydefault}{\sfdefault}
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{Ubuntu}
-\setmonofont{Ubuntu}
+\renewcommand{\familydefault}{\sfdefault}
+% \usepackage{fontspec}
+% \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+% \setmainfont{Ubuntu}
+% \setmonofont{Ubuntu}
