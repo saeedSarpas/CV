@@ -11,8 +11,8 @@
     "professional-experience"
     "honors-and-awards"
     "technical-skils"
-    "work-experience"
     "workshops-and-conferences"
+    "work-experience"
     "article"
     "art10"))
  :latex)

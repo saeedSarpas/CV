@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[a4paper, left=1cm, right=1.5cm, bottom=1.5cm, top=2cm]{geometry}
+\usepackage[a4paper, left=1cm, right=1.5cm, bottom=1.5cm, top=1.5cm]{geometry}
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{pifont}
@@ -27,14 +27,27 @@
 \newcommand{\homeemail}{s.sarpas@gmail.com}
 
 % Separators
-\newcommand{\sep}{\vspace{-1mm}}
+\newcommand{\sep}{\vspace{-2mm}}
+
+% Abbreviations
+\newcommand{\AIfA}{Argelander-Institut f\"{u}r Astronomie, University of Bonn,
+Germany}
+\newcommand{\SBU}{Shahid Beheshti University, Tehran, Iran}
+\newcommand{\INEF}{Iran’s National Elites Foundation}
+\newcommand{\YSC}{Young Scholar Club (YSC), Tehran, Iran}
+\newcommand{\badhonnef}{Physikzentrum Bad Honnef, Germany}
+\newcommand{\IPM}{Institute for Research in Fundamental Sciences, IPM, Tehran,
+Iran}
+
+% Inline items
+\newcommand{\initem}[1]{\desc{\hspace{3mm}#1}}
 
 % New part symbol
 \newcommand{\newpart}{{\small~\ding{108}}}
 
 % Part title
-\newcommand{\parttitle}[2]{\multicolumn{#1}{l}{\vspace{3mm}\hspace{5mm}\
-{\large\textbf{\newpart~#2}}}\vspace{-4mm}\\\multicolumn{#1}{l}{\vspace{2mm}\
+\newcommand{\parttitle}[2]{\multicolumn{#1}{l}{\vspace{2mm}\hspace{5mm}\
+{\large\textbf{\newpart~#2}}}\vspace{-3mm}\\\multicolumn{#1}{l}{\vspace{2mm}\
 \textcolor{light-gray}{\rule{\textwidth}{0.1mm}}}}
 
 % Descriptions

@@ -2,7 +2,7 @@
  "preamble"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("geometry" "a4paper" "left=1cm" "right=1.5cm" "bottom=1.5cm" "top=2cm") ("fontenc" "T1")))
+                     '(("inputenc" "utf8") ("geometry" "a4paper" "left=1cm" "right=1.5cm" "bottom=1.5cm" "top=1.5cm") ("fontenc" "T1")))
    (TeX-run-style-hooks
     "inputenc"
     "amsmath"
@@ -20,6 +20,7 @@
     '("sgray" 1)
     '("desc" 1)
     '("parttitle" 2)
+    '("initem" 1)
     "name"
     "officeaddr"
     "officepostalcode"
@@ -30,6 +31,12 @@
     "hometel"
     "homeemail"
     "sep"
+    "AIfA"
+    "SBU"
+    "INEF"
+    "YSC"
+    "badhonnef"
+    "IPM"
     "newpart"
     "newline"))
  :latex)
