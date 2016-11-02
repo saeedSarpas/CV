@@ -10,13 +10,14 @@
 
   \desc{Cosmological N-body simulations compute the gravitational
   interactions between discrete particles instead of solving the Vlasov-Poisson
-  equation. This might lead to some nonphysical consequences
+  equation. This discreteness might lead to some nonphysical consequences
   (e.g.~generation of spurious structures, noisy force calculation,
   etc.).}& \\
-  \desc{Our approach to study these effects is,} \\
-  \initem{1.~generate initial conditions with different number of particles,}\\
-  \initem{2.~run N-body simulation,}\\
+  \desc{Our approach to studying these effects is,} \\
+  \initem{1.~generate different initial conditions (IC) by varying the number of
+  particles at fixed power spectrum,}\\
+  \initem{2.~run N-body simulations using generated ICs,}\\
   \initem{3.~find matching halos between different simulations,}\\
-  \initem{4.~study statistical properties of halos along the history of
+  \initem{4.~study the statistical properties of the halos along the history of
   the simulations.}\\
 \end{longtable}
