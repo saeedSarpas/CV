@@ -9,9 +9,11 @@
     "academic-qualification"
     "master-thesis"
     "professional-experience"
-    "honors-and-awards"
+    "bachelor-thesis"
+    "technical-experience"
     "technical-skils"
     "work-experience"
+    "honors-and-awards"
     "workshops-and-conferences"
     "article"
     "art10"))

@@ -37,7 +37,12 @@
     "YSC"
     "badhonnef"
     "IPM"
+    "IASBS"
     "newpart"
-    "newline"))
+    "newline")
+   (LaTeX-add-array-newcolumntypes
+    "C"
+    "L"
+    "R"))
  :latex)
 
