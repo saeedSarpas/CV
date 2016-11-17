@@ -30,6 +30,8 @@
     "homepostalcode"
     "hometel"
     "homeemail"
+    "teltag"
+    "emailtag"
     "sep"
     "AIfA"
     "SBU"
