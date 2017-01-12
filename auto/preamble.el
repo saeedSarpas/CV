@@ -2,7 +2,7 @@
  "preamble"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("geometry" "a4paper" "left=1cm" "right=1.5cm" "bottom=1.5cm" "top=1.5cm") ("fontenc" "T1")))
+                     '(("inputenc" "utf8") ("geometry" "a4paper" "left=1cm" "right=1.5cm" "bottom=2.5cm" "top=2.5cm") ("fontenc" "T1")))
    (TeX-run-style-hooks
     "inputenc"
     "amsmath"
@@ -11,6 +11,7 @@
     "multirow"
     "array"
     "pifont"
+    "hyperref"
     "longtable"
     "titling"
     "fontenc"
@@ -30,8 +31,17 @@
     "homepostalcode"
     "hometel"
     "homeemail"
+    "contactinfotag"
+    "personalinfotag"
+    "languagestag"
     "teltag"
     "emailtag"
+    "birthtag"
+    "birth"
+    "placeofbirthtag"
+    "placeofbirth"
+    "nationalitytag"
+    "nationality"
     "sep"
     "AIfA"
     "SBU"

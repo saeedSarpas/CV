@@ -7,19 +7,8 @@
 % ------------------------------------------------------------------------------
 %	HEADER
 % ------------------------------------------------------------------------------
-\begin{table}[h]
-  \begin{tabular}{L{7.5cm} L{5.75cm} L{5cm}}
-    \multicolumn{2}{l}{{\vspace{1cm}\hspace{1.5cm}{\Huge \name}}} &
-      \multirow{6}{*}{\includegraphics[height=4.5cm]{imgs/profile-pic.jpg}} \\
-    \hspace{1cm}\sgray{Office:} & \sgray{Home:} & \\
-    \hspace{1cm}\sgray{\officeaddr} & \sgray{\homeaddr} & \\
-    \hspace{1cm}\sgray{\officepostalcode} & \sgray{\homepostalcode} & \\
-    \hspace{1cm}\sgray{\emailtag~\officeemail} & \sgray{\emailtag~\homeemail} & \\
-    \hspace{1cm}\sgray{\teltag~\officetel} & \sgray{\teltag~\hometel} & \\
-  \end{tabular}
-\end{table}
-
-\vspace{1cm}
+\input{personal-details}
+\vspace{1.5cm}
 
 % ------------------------------------------------------------------------------
 %	ACADEMIC QUALIFICATION
@@ -55,6 +44,8 @@
 %	WORK EXPERIENCE
 % ------------------------------------------------------------------------------
 \input{work-experience}
+
+\newpage
 
 % ------------------------------------------------------------------------------
 %	HONORS AND AWARDS
